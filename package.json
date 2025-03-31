@@ -1,0 +1,27 @@
+{
+  "name": "canteencoupoongeneratorbackend",
+  "version": "1.0.0",
+  "description": "this is backend for canteen coupoon generator\r collaborators--> asmit, anisha, bhumikaaaaa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asmitumrao/CanteenCoupoonGeneratorBackend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Asmitumrao/CanteenCoupoonGeneratorBackend/issues"
+  },
+  "homepage": "https://github.com/Asmitumrao/CanteenCoupoonGeneratorBackend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "mongoose": "^8.13.1"
+  }
+}
