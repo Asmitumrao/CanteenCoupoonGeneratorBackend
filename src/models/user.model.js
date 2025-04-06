@@ -14,12 +14,20 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    role:{
-        type: String,
-        enum: ['customer', 'admin'],
-        default: 'customer'
-    },
-})
+    cart: [
+        {
+          productId: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "Product", // assumes you have a Product model
+            required: true
+          },
+          quantity: {
+            type: Number,
+            default: 1
+          }
+        }
+      ]
+});
 
 
-export const  User = mongoose.model('User', userSchema);
+export const  User = mongoose.model('User', userSchema);    
