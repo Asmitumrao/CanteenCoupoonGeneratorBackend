@@ -1,4 +1,5 @@
-import connectDB from "./db/db.js";
+import connectDB from "./config/db.js";
+import cloudinaryConfig from "./config/cloudinaryConfig.js";
 import dotenv from "dotenv";
 import {app} from "./app.js";
 dotenv.config();
@@ -9,6 +10,7 @@ dotenv.config();
 const PORT = process.env.PORT || 3000;
 
 // Connect to MongoDB
+cloudinaryConfig(); // Initialize Cloudinary configuration
 connectDB()
 .then(() =>{
     app.listen(PORT,() => {console.log(`🚀 Server running on port ${PORT}`)});

@@ -37,7 +37,7 @@ const userValidate = (req, res, next) => {
 }
 
 
-const SellerValidate = (req, res, next) => {
+const sellerValidate = (req, res, next) => {
     const token = req.cookies.sellerToken ?? req.headers['sellerToken'];
 
     if(!token) {
@@ -71,4 +71,4 @@ const SellerValidate = (req, res, next) => {
     }
 
 }
-export { userValidate, SellerValidate };
+export { userValidate, sellerValidate };

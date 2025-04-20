@@ -13,10 +13,10 @@ const upload = multer({ storage: storage });
 
 // Middleware for handling single file upload
 const singleFileUpload = upload.single('file');
-const upladMultipleFiles = upload.array('files', 10); // Limit to 10 files
+const uploadMultipleFiles = upload.array('files', 10); // Limit to 10 files
 
 
-export { singleFileUpload, upladMultipleFiles };
+export { singleFileUpload, uploadMultipleFiles };
 
 
 
